@@ -10,11 +10,7 @@ const Navbar = () => {
           {/* LOGO */}
 
           <div className="flex items-center">
-            <img
-              src="./src/assets/martin-logo.svg"
-              className="w-12 h-auto"
-              alt="martin-logo"
-            />
+            <img src="/martin-logo.svg" className="w-12 h-auto" alt="logo" />
           </div>
 
           {/* Desktop Menu */}
@@ -38,7 +34,7 @@ const Navbar = () => {
           <div className="flex items-center md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="text-white">
               <img
-                src="./src/assets/menu.png"
+                src="/menu.png"
                 className="w-8 h-8 md:hidden"
                 alt="menu-icon"
               />
