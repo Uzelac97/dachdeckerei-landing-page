@@ -77,11 +77,11 @@ const Services = () => {
         </div>
 
         {/* SERVICES GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl-grid-cols-4 gap-8 justify-center">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-slate-900/50 p-8 border border-white/5 hover:border-red-600 transition-all duration-300"
+              className="group bg-slate-900/50 p-8 border border-white/5 hover:border-red-600 transition-all duration-300 h-full"
             >
               {/* 1. ICON CONTAINER */}
               <div className="text-red-600 mb-6 group-hover:scale-110 transition-transform duration-300">
