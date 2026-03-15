@@ -28,8 +28,8 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
-        <span className="text-red-600 text-xs uppercase tracking-[0.2em] mb-2 font-bold animate-pulse">
-          Scrollen
+        <span className="text-red-600 text-3xl uppercase tracking-[0.2em] mb-2 font-bold animate-pulse">
+          |
         </span>
         <div className="w-3px h-12 bg-linear-to-b from-red-600 to-transparent"></div>
       </div>

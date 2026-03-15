@@ -5,12 +5,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="sticky top-0 bg-slate-900 w-full z-50">
+      <nav className="sticky top-0 bg-black w-full z-50">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 h-20">
           {/* LOGO */}
 
           <div className="flex items-center">
-            <img src="/martin-logo.svg" className="w-12 h-auto" alt="logo" />
+            <img src="/dachdeckerei.jpg" className="w-32 h-auto" alt="logo" />
           </div>
 
           {/* Desktop Menu */}
