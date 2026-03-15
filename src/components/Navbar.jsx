@@ -21,7 +21,7 @@ const Navbar = () => {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="hover:text-orange-500 transition"
+                  className="hover:text-red-600 transition"
                 >
                   {item}
                 </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             ></div>
 
-            <div className="fixed top-0 right-0 h-full w-64 bg-slate-800 z-50 p-10 shadow-2xl">
+            <div className="fixed top-0 right-0 h-full w-64 bg-black z-50 p-10 shadow-2xl">
               <div className="flex justify-end">
                 <button
                   onClick={() => setIsOpen(false)}
