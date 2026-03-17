@@ -3,6 +3,14 @@ import React, { useState } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinks = [
+    { name: "Startseite", id: "hero" },
+    { name: "Über uns", id: "ueber-uns" },
+    { name: "Dienstleistungen", id: "dienstleistungen" },
+    { name: "Kontakt", id: "kontakt" },
+    { name: "Impressum", id: "impressum" },
+  ];
+
   return (
     <div>
       <nav className="sticky top-0 bg-black w-full z-50">
@@ -16,17 +24,15 @@ const Navbar = () => {
           {/* Desktop Menu */}
 
           <div className="hidden md:flex space-x-8 items-center text-white">
-            {["Startseite", "Dienstleistungen", "Kontakt", "Impressum"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="hover:text-red-600 transition"
-                >
-                  {item}
-                </a>
-              ),
-            )}
+            {navLinks.map((link) => (
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                className="hover:text-red-600 transition"
+              >
+                {link.name}
+              </a>
+            ))}
           </div>
 
           {/* Menu Icon */}
@@ -61,18 +67,16 @@ const Navbar = () => {
               </div>
 
               <nav className="flex flex-col space-y-5 text-lg text-white mt-10">
-                {["Startseite", "Dienstleistungen", "Kontakt", "Impressum"].map(
-                  (item) => (
-                    <a
-                      key={item}
-                      href={`#${item.toLowerCase()}`}
-                      className="hover:text-red-500 transition-colors duration-300"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item}
-                    </a>
-                  ),
-                )}
+                {navLinks.map((link) => (
+                  <a
+                    key={link.id}
+                    href={`#${link.id}`}
+                    className="hover:text-red-500 transition-colors duration-300"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ))}
               </nav>
             </div>
           </>
