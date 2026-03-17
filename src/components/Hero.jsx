@@ -3,6 +3,7 @@ import heroImg from "../assets/hero-bg.jpg";
 const Hero = () => {
   return (
     <section
+      id="hero"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${heroImg})`,
         backgroundSize: "cover",
