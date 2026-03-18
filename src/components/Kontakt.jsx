@@ -6,7 +6,7 @@ const Kontakt = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    service: "Dachreinigung",
+    service: "Flachdachabdichtung",
     message: "",
   });
 
@@ -36,7 +36,7 @@ const Kontakt = () => {
         setFormData({
           name: "",
           email: "",
-          service: "Dachreinigung",
+          service: "Flachdachabdichtung",
           message: "",
         });
       })
@@ -87,9 +87,18 @@ const Kontakt = () => {
               onChange={handleChange}
               className="bg-zinc-800 border border-zinc-700 text-white p-4 rounded-xl focus:outline-none focus:border-red-600 transition-all cursor-pointer"
             >
-              <option value="Dachreinigung">Dachreinigung</option>
-              <option value="Dachbeschichtung">Dachbeschichtung</option>
-              <option value="Reparatur">Reparatur</option>
+              <option value="" disabled>
+                Dienstleistung auswählen *
+              </option>
+              <option value="Flachdachabdichtung">Flachdachabdichtung</option>
+              <option value="Balkon & Terrasse">Balkon & Terrasse</option>
+              <option value="Reparatur & Wartung">Reparatur & Wartung</option>
+              <option value="ABS Safety">ABS Safety</option>
+              <option value="Dachfenster">Dachfenster</option>
+              <option value="Flüssigkunststoff">Flüssigkunststoff</option>
+              <option value="Besichtigungssysteme">Besichtigungssysteme</option>
+              <option value="Leckageortung">Leckageortung</option>
+              <option value="Sonstiges">Sonstiges / Allgemeine Anfrage</option>
             </select>
           </div>
 
