@@ -23,9 +23,12 @@ const Hero = () => {
           Traditionelle Handwerkskunst trifft moderne Technik. <br />
           Ihr Dach in unseren Händen
         </p>
-        <button className="mt-10 bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-sm transition-all duration-300 active:scale-95 shadow-2xl uppercase text-sm tracking-widest">
+        <a
+          href="#kontakt"
+          className="mt-10 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-sm transition-all duration-300 active:scale-95 shadow-2xl uppercase text-sm tracking-widest text-center no-underline"
+        >
           Kontakt Aufnehmen
-        </button>
+        </a>
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">

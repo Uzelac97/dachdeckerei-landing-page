@@ -51,7 +51,7 @@ const About = () => {
                 {[
                   "20+ Jahre Erfahrung",
                   "Zertifizierter Meisterbetrieb",
-                  "10 Jahre Garantie",
+                  "5 Jahre Garantie",
                   "Kostenlose Beratung",
                 ].map((item, index) => (
                   <div
