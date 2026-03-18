@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Headset } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const Kontakt = () => {
@@ -50,7 +50,7 @@ const Kontakt = () => {
     <section id="kontakt" className="bg-zinc-950 py-20 px-4">
       <div className="max-w-xl mx-auto">
         <div className="flex items-center justify-center gap-3 mb-8">
-          <Headset className="text-red-600 w-10 h-10 animate-bounce-slow" />
+          <PhoneCall className="text-red-600 w-10 h-10 animate-bounce" />
           <h2 className="text-white text-3xl font-bold uppercase tracking-widest">
             Kontakt
           </h2>
