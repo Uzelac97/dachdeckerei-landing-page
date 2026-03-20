@@ -87,9 +87,6 @@ const Kontakt = () => {
               onChange={handleChange}
               className="bg-zinc-800 border border-zinc-700 text-white p-4 rounded-xl focus:outline-none focus:border-red-600 transition-all cursor-pointer"
             >
-              <option value="" disabled>
-                Dienstleistung auswählen *
-              </option>
               <option value="Flachdachabdichtung">Flachdachabdichtung</option>
               <option value="Balkon & Terrasse">Balkon & Terrasse</option>
               <option value="Reparatur & Wartung">Reparatur & Wartung</option>
