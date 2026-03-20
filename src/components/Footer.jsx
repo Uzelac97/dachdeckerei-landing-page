@@ -1,4 +1,5 @@
 import logo from "../assets/dachdeckerei.jpg";
+import { Link } from "react-router-dom";
 import { User, MapPin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -56,7 +57,7 @@ const Footer = () => {
             <h4 className="font-bold uppercase tracking-widest text-xs mb-1 text-white flex items-center gap-2">
               <MapPin size={14} /> Zentrale
             </h4>
-            <p className="text-sm">Musterstraße 123, 72202 Nagold</p>
+            <p className="text-sm">Baumschulenring 13, 72202 Nagold</p>
             <div className="flex items-center gap-2 mt-1">
               <Mail size={14} className="text-red-600" />
               <a
@@ -73,15 +74,18 @@ const Footer = () => {
       {/* BOTTOM LINE - Copyright & Legal */}
       <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-[0.2em]">
         <p>
-          &copy; {currentYear} Martin Flachdachbau. Alle Rechte vorbehalten.
+          &copy; {currentYear} Martin Dachdeckerei. Alle Rechte vorbehalten.
         </p>
         <div className="flex gap-8">
-          <a href="/impressum" className="hover:text-white transition-colors">
+          <Link to="/impressum" className="hover:text-white transition-colors">
             Impressum
-          </a>
-          <a href="/datenschutz" className="hover:text-white transition-colors">
+          </Link>
+          <Link
+            to="/datenschutz"
+            className="hover:text-white transition-colors"
+          >
             Datenschutz
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
