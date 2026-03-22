@@ -1,3 +1,5 @@
+import React from "react";
+import { contactData } from "../data/contactData";
 const Impressum = () => {
   return (
     <div className="min-h-screen pt-32 pb-20 px-4 bg-black text-zinc-300">
@@ -12,11 +14,11 @@ const Impressum = () => {
               Angaben gemäß § 5 TMG
             </h2>
             <p>
-              Martin Dachdeckerei
+              {contactData.companyName}
               <br />
-              Baumschulenring 13
+              {contactData.address}
               <br />
-              72202 Nagold
+              {contactData.zipCode} {contactData.city}
             </p>
           </section>
 
@@ -25,9 +27,12 @@ const Impressum = () => {
               Vertreten durch
             </h2>
             <p>
-              Jurij Martin
-              <br />
-              Eric Martin
+              {contactData.team.map((member, index) => (
+                <React.Fragment key={index}>
+                  {member.name}
+                  <br />
+                </React.Fragment>
+              ))}
             </p>
           </section>
 
@@ -36,9 +41,9 @@ const Impressum = () => {
               Kontakt
             </h2>
             <p>
-              Telefon: +49 176 43488639
+              Telefon: {contactData.mainPhone}
               <br />
-              E-Mail: klarseric02@gmail.com
+              E-Mail: {contactData.email}
             </p>
           </section>
         </div>
