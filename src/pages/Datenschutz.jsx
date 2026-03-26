@@ -47,8 +47,26 @@ const Datenschutz = () => {
             </h2>
             <p className="mb-4">
               Diese Website wird bei einem externen Dienstleister gehostet
-              (Hoster). Die personenbezogenen Daten werden auf den Servern des
-              Hosters gespeichert.
+              (Hoster). Wir nutzen hierfür den Anbieter:
+            </p>
+            <p className="mb-4 bg-zinc-900/50 p-3 border-l-2 border-red-600">
+              <strong>IONOS SE</strong>
+              <br />
+              Elgendorfer Str. 57, 56410 Montabaur, Deutschland.
+            </p>
+            <p className="mb-4">
+              Die personenbezogenen Daten, die auf dieser Website erfasst
+              werden, werden auf den Servern des Hosters gespeichert. Weitere
+              Details entnehmen Sie der Datenschutzerklärung von IONOS unter:{" "}
+              <br />
+              <a
+                href="https://www.ionos.de/terms-gtc/datenschutzerklaerung/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-500 hover:text-red-400 underline transition-colors"
+              >
+                https://www.ionos.de/terms-gtc/datenschutzerklaerung/
+              </a>
             </p>
             <p>
               Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw.

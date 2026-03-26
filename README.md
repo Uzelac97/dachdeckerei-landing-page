@@ -1,16 +1,37 @@
-# React + Vite
+# 🏠 Martin Dachdeckerei - Premium Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional, high-performance landing page for a roofing business located in Nagold, Germany. This project showcases a modern approach to local business web presence.
 
-Currently, two official plugins are available:
+## 🔗 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 **[martin-dachdeckerei.de](https://martin-dachdeckerei.de)**
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **React 18** (Vite)
+- **Tailwind CSS** (Utility-first styling)
+- **Framer Motion** (Smooth scrolling & animations)
+- **Lucide Icons** (Clean, modern iconography)
+- **EmailJS** (Serverless contact form handling)
 
-## Expanding the ESLint configuration
+## 🎯 Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Data-Driven Architecture**: All content is managed through centralized data structures for easy maintenance and scalability.
+- **Local SEO Optimized**: Built-in meta tags, Open Graph support, and structured data for high visibility in Nagold and surrounding areas.
+- **Responsive & Fast**: Fully optimized for mobile devices with high performance and accessibility scores.
+- **Legal Compliance**: Integrated German standard Impressum and Datenschutz (GDPR/DSGVO) specifically tailored for the roofing industry.
+
+## 📁 Architecture Highlights
+
+I implemented a centralized data management pattern to keep the UI clean and allow for quick content updates without touching the components:
+
+- `src/data/servicesData.js` - Service descriptions, categories, and pricing.
+- `src/data/contactData.js` - Global contact information (Email, Phone, Address).
+- `src/data/navLinks.js` - Dynamic navigation mapping for the header and footer.
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Uzelac97/dachdeckerei-landing-page.git](https://github.com/Uzelac97/dachdeckerei-landing-page.git)
+   ```

@@ -18,6 +18,6 @@ export const contactData = {
       telHref: "tel:+4917624571216",
     },
   ],
-  email: "klarseric02@gmail.com",
+  email: "info@martin-dachdeckerei.de",
   mainPhone: "+49 176 43488639",
 };
